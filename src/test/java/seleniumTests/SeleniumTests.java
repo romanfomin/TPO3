@@ -75,7 +75,7 @@ public class SeleniumTests {
             Set<String> windowHandles = driver.getWindowHandles();
             for (String handle : windowHandles) {
                 driver.switchTo().window(handle);
-                if (driver.getTitle().contains("win_ser_1")) {
+                if (driver.getTitle().contains("GameSmart")) {
                     assertEquals("GameSmart", driver.getTitle());
                     break;
                 }
@@ -91,7 +91,7 @@ public class SeleniumTests {
             Set<String> windowHandles = driver.getWindowHandles();
             for (String handle : windowHandles) {
                 driver.switchTo().window(handle);
-                if (driver.getTitle().contains("win_ser_1")) {
+                if (driver.getTitle().contains("ACESSE ESPORTS")) {
                     assertEquals("ACESSE ESPORTS - Start playing fantasy eSports today!", driver.getTitle());
                     break;
                 }
@@ -159,7 +159,7 @@ public class SeleniumTests {
             Set<String> windowHandles = driver.getWindowHandles();
             for (String handle : windowHandles) {
                 driver.switchTo().window(handle);
-                if (driver.getTitle().contains("win_ser_1")) {
+                if (driver.getTitle().contains("Acesse Life")) {
                     assertEquals("Facebook", driver.findElement(By.xpath("//i[contains(@class,\"fb_logo\")]/u")).getText());
                     break;
                 }
